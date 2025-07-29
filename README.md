@@ -14,7 +14,7 @@ A FastAPI application that demonstrates how to fetch and serve data from Reddit'
 
 1. Install dependencies:
 ```bash
-pip install -e .
+uv pip install .
 ```
 
 ## Running the Application
@@ -25,6 +25,14 @@ python main.py
 ```
 
 2. The API will be available at `http://localhost:8000`
+
+## Running the Application in Docker
+
+```bash
+docker build -t <account>/devops_reddit_scrapper .
+docker run --name reddit-scraper-container -p8000:8000 <account>/devops_reddit_scrapper
+docker pull <account>/devops_reddit_scrapper
+```
 
 ## API Endpoints
 
