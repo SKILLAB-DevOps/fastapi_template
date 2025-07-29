@@ -30,7 +30,7 @@ python main.py
 
 ```bash
 docker build -t <account>/devops_reddit_scrapper .
-docker run --name <account>/devops_reddit_scrapper -p8000:8000 devops_reddit_scrapper
+docker run --name reddit-scraper-container -p8000:8000 <account>/devops_reddit_scrapper
 docker pull <account>/devops_reddit_scrapper
 ```
 
